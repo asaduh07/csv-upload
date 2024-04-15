@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     try {
         const response = await axios.get('https://csv-upload-u0y7.onrender.com/api/csv/getall')
         const files = response.data.res;
+        console.log(files);
         const tableBody = document.querySelector('tbody');
         files.forEach((file, index) => {
             const rowEl = document.createElement('tr');

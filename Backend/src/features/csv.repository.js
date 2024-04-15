@@ -53,7 +53,7 @@ export default class CsvRepository{
             if(Files.length>0){
                 return {success:true,res:Files}
             }else{
-                return{success:true,res:"No files uploaded"}
+                return{success:false,res:"No files uploaded"}
             }
 
         }catch (err) {
