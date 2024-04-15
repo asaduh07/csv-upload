@@ -32,6 +32,8 @@ export default class CsvController {
             const result=await this.csvRepository.getAllFiles();
             if(result.success){
                 res.status(200).json({success:true,res:result.res})
+            }else{
+                res.status(200).json({success:false,res:[]})
             }
 
         } catch (err) {
