@@ -18,7 +18,7 @@ export default class CsvController {
             const { headers, results } = await this.csvRepository.parseCsvFile(filePath);
             await this.csvRepository.saveData(filenameWithoutExtension, headers, results, filePath);
 
-            res.send('Data saved successfully');
+            res.status(201).json({success:true,res:'Data saved successfully'});
 
 
         }
