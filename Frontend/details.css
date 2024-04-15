@@ -1,0 +1,39 @@
+.containers {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    border:  2px solid lightgray;
+    margin: 5% auto;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow-x:auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.table-responsive { 
+    display: flex;
+    overflow-x: auto;
+}
+.pagination{
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+.pageNumbers{
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+
+}
+th:hover{
+    cursor: pointer;
+    color: red !important;
+}
+
